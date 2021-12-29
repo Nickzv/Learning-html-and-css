@@ -1,0 +1,94 @@
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url(https://wallpaperaccess.com/full/3513670.jpg);
+    background-size: cover;
+
+}
+
+#tittle{
+    margin-top: 0%;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    font-family:'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 45px;
+    
+}
+.Box{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 3px;
+    color: seashell;
+    width: 400px;
+    height: auto;
+    background: #60077280;
+    padding: 5px;
+    overflow-x:  hidden ;
+    text-align: center;
+    margin: auto;
+    margin-top: auto;
+    font-size: 16px;
+    cursor:pointer;
+    transition:all 180ms ease;
+}
+
+.efeito{
+    border:none;
+    color:rgb(255, 255, 255);
+    padding: 15px;
+    margin: 10px;
+    font-size: 20px;
+    line-height: 24px;
+    border-radius: 10px;
+    position:relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition:all 180ms ease;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.efeito1{
+    bottom: 26px;
+    top: 10px;
+    left: 630px;
+    background-color: #600772;
+}
+.efeito::before{
+    content: '';
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 52px;
+    background: rgb(255, 255, 255,0.3);
+    border-radius: 10px;
+    transition: all 0.6s ease;
+
+}
+.efeito1:hover::before{
+    width: 100%;
+
+}
+.img {
+    border-radius: 100px;
+    max-width: 400px;
+    height: 180px;
+}
+  
+  .quadrado {
+    background: rgba(183, 0, 255, 0);
+    width: 25px;
+    height: 20px;
+    animation: go-back 3s infinite alternate;
+    border-radius: 100px;
+  }
+  
+  @keyframes go-back {
+    from {
+      transform: translateX(380px);
+    }
+    to {
+      transform: translateX(0px);
+    }
+  }
